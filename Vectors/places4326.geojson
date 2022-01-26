@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "places4326",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "Names": "Friends House", "auxiliary_storage_labeling_positionx": -8424570.8273065295, "auxiliary_storage_labeling_positiony": 4289014.9144376386 }, "geometry": { "type": "Point", "coordinates": [ -75.677853628631425, 35.915440975324124 ] } },
+{ "type": "Feature", "properties": { "id": 2, "Names": "Coastal Federation Office", "auxiliary_storage_labeling_positionx": -8418182.690572558, "auxiliary_storage_labeling_positiony": 4279650.8386125173 }, "geometry": { "type": "Point", "coordinates": [ -75.621903624515951, 35.847307959821592 ] } },
+{ "type": "Feature", "properties": { "id": 3, "Names": "My Favorite Overlook", "auxiliary_storage_labeling_positionx": -8428952.9368849806, "auxiliary_storage_labeling_positiony": 4292269.5317045674 }, "geometry": { "type": "Point", "coordinates": [ -75.717162923469971, 35.939078440258086 ] } },
+{ "type": "Feature", "properties": { "id": 4, "Names": "Roanoke Marshes Lighthouse", "auxiliary_storage_labeling_positionx": -8423319.5293975584, "auxiliary_storage_labeling_positiony": 4287852.1270375969 }, "geometry": { "type": "Point", "coordinates": [ -75.668275761031396, 35.908214535498338 ] } },
+{ "type": "Feature", "properties": { "id": 5, "Names": "Jennette's Pier", "auxiliary_storage_labeling_positionx": -8415228.8187611159, "auxiliary_storage_labeling_positiony": 4288280.1013725102 }, "geometry": { "type": "Point", "coordinates": [ -75.595421695932345, 35.910104382832735 ] } }
+]
+}
