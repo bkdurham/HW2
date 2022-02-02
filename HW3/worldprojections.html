@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Projections</title>
+</head>
+<body>
+    <h1>In this project I learned how to display images in different projections</h1>
+    
+    <h2>How I displayed the map in different projections using QGIS</h2>
+    <p>After I uploaded the map to QGIS, I changed the projection by clicking on the “Current Coordinate Reference System” in the bottom right. After this opened a new window, I searched for a coordinate system using the projection name or the EPSG code. I then selected the projection I wanted and hit “apply.” I then closed the window and could see the reprojected map in QGIS.</p>
+    
+    <h2>WGS84</h2>
+    <h3>This map is in the traditional rectangular shape. As with any rectangular map, this inaccurately portrays the distance around the poles to be the same as the distance around the equator. Also, the circles become more like ellipsoids the closer to the poles, marking a distortion in shape. Area, on the other hand, seems to be mostly preserved.</h3>
+    <a href="./Maps/4326.png">
+    <img src="./Maps/4326.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Aitoff</h2>
+    <h3>This map is an oval, which allows it to more accurately represent the shorter distance around the poles compared to the equator. It also is able to mostly conserve area. The places with the most area distortion are in the corners of the map. There is also a slight distortion of shape as the circles become flattened towards the edges. The minor distortion of each of these characteristics suggest this map tried to compromise the distortion of each to be more generally accurate.</h3>
+    <a href="./Maps/54043.png">
+    <img src="./Maps/54043.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Pseudo-Mercator</h2>
+    <h3>This map is a traditional rectangular, which misrepresents the distance around the poles as being equivalent to around the equator. Area is also distorted, as the circles get larger in the latitudes above and below the equator. Shape, however, is preserved, as there is no flattening of the circles.</h3>
+    <a href="./Maps/3857.png">
+    <img src="./Maps/3857.png" alt="Pseudo-Mercator" width='500px'>
+    </a>
+    <h2>Winkle I</h2>
+    <h3>As an oval map, it can more accurately represent the distance around the poles and equator. However, there are distortions to both shape and area. The circles near the equator are flattened, as are those on the edges of the map. At the edges of the map, the circles are also slight larger, representing the distortion of area. However, as these distortions are relatively minor, it suggests the map tried to make compromises in order to not have some major distortion.</h3>
+    <a href="./Maps/53018.png">
+    <img src="./Maps/53018.png" alt="Winkel I" width='500px'>
+    </a>
+    <h2>Equal Area Cylindrical</h2>
+    <h3>This is a rectangular map projected with the cylindrical method. As the title suggests, it preserves the area of the continents. However, it majorly distorted shape as the circles become more like ellipsoids near the poles. Also, as a rectangular map it inaccurately represent the distance around the poles and equator.</h3>
+    <a href="./Maps/54034.png">
+    <img src="./Maps/54034.png" alt="Equal Area Cylindrical" width='500px'>
+    </a>
+    <h2>Equidistant Conic</h2>
+    <h3>As a conic projection, this projection stands out from the rest because of its “top-down” view. This allows it to accuracy represent the distance around the North Pole as compared the the equator. However, the further from the North Pole, the more distorted the shape becomes. Antartica’s shape and area are severely distorted.</h3>
+    <a href="./Maps/54027.png">
+    <img src="./Maps/54027.png" alt="Equidistant Conic" width='500px'>
+    </a>
+    <h2>Azimuthal Equidistant</h2>
+    <h3>This projection accurately portrays the distance to circle Earth at the North Pole compared the equator. However, like other conic projections, it becomes more distorted the further from the North Pole, with Antarctica being severely distorted. </h3>
+    <a href="./Maps/102016.png">
+    <img src="./Maps/102016.png" alt="Azimuthal Equidistant" width='500px'>
+    </a>
+    <h2>Goode Homolosine</h2>
+    <h3>With the oval shape of this map, the main goal seems to be to compromise the distortions of shape and area. There is little distortion near the center, but larger distortions towards the edges of the map. It also correctly presents a shorter distance around the poles than the equator.</h3>
+    <a href="./Maps/54052.png">
+    <img src="./Maps/54052.png" alt="Goode Homolosine" width='500px'>
+    </a>
+    <h2>Wagner VII</h2>
+    <h3>This map presents a shorter distance around the poles than the equator, but is not as accurate as the conic projections. Area is also generally preserved, with Antartica being a site of distortion. In addition to attempting to preserve area, the map attempts to minimize distortions to shape, with only minor flattening of the circles. Unlike some of the other maps, the most circular are found along the poles.</h3>
+    <a href="./Maps/54076.png">
+    <img src="./Maps/54076.png" alt="Wagner VII" width='500px'>
+    </a>
+    <p></p>
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
